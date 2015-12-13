@@ -58,5 +58,9 @@ app.use(function(err, req, res, next) {
   });
 });
 
+app.listen(process.env.PORT || 3000, function() {
+  console.log('Node app is running on port', app.get('port'));
+});
+
 
 module.exports = app;
